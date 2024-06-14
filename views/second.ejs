@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <% users.forEach(function(user){%>
+
+ <p><%= user.username%></p>
+ <p><%= user.email%></p>
+ <p><%= user.number%></p>
+ <a href="/delete/<%= user._id%>">delete</a>
+ <a href="/update/<%= user._id%>">update</a>
+
+   <%})%>
+</body>
+</html>
